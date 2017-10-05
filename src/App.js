@@ -2,7 +2,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import FlowTest from './FlowTest'
+import FlowTest from 'ui/components/FlowTest.js'
 
 const App = () => (
   <div className="App">
@@ -13,9 +13,9 @@ const App = () => (
     <p className="App-intro">
       To get started, edit <code>src/App.js</code> and save to reload.
 
-      <FlowTest text={'This guy is type-checked by Flow'} />
+      <FlowTest text={'This guy was type-checked with Flow'} />
     </p>
   </div>
 )
 
-export default App;
+export default App
