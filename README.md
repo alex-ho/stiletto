@@ -4,6 +4,9 @@ To run local development mode:
 - npm start
 - (in a separate terminal) npm run electron
 
+You can also run Flow to type-check our Javascript. Run this with:
+- npm run flow
+
 This will open both a tab in your default browser and an Electron window that should render the same view. I'll look into how I can make this a single action, but I suspect it will require ejecting the application (info about that below).
 
 
