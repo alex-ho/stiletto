@@ -10,3 +10,4 @@
 module.name_mapper='^entities/' -> '<PROJECT_ROOT>/src/entities/'
 module.name_mapper='^gateways/' -> '<PROJECT_ROOT>/src/gateways/'
 module.name_mapper='^ui/' -> '<PROJECT_ROOT>/src/ui/'
+module.name_mapper='^state/' -> '<PROJECT_ROOT>/src/state/'
