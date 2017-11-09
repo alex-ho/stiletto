@@ -5,9 +5,25 @@ import R from 'ramda'
 
 const externalRequest = (params)=> new ExternalRequest('ContainerOrchestration', params)
 
-const get = (): Promise<Array<Container>> => ExternalServices.invoke(externalRequest({
+const get = (id) => ExternalServices.invoke(externalRequest({
   mapper: R.map(Container),
-  func: 'GET'
+  func: 'GET',
+  id
 }))
 
-export { get }
+const start = (configuration) => ExternalServices.invoke(externalRequest({
+  mapper: Container,
+  func: 'START',
+  configuration
+}))
+
+const stop = (container) => ExternalServices.invoke(externalRequest({
+  func: 'STOP',
+  container
+}))
+
+export {
+  get,
+  start,
+  stop
+}
