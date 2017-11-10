@@ -3,7 +3,7 @@ import React from 'react'
 import logo from './logo.svg'
 import './App.css'
 
-import Tile from 'ui/components/Tile.js'
+import ContainerList from 'ui/containers/ContainerList'
 import ReduxTestContainer from 'ui/containers/ReduxTestContainer/ReduxTestContainer'
 
 
@@ -16,7 +16,7 @@ const App = () => (
     <p className="App-intro">
       To get started, edit <code>src/App.js</code> and save to reload.
 
-      <Tile text={'Confluent-Kafka with a longer name'} color={'red'} height={200}  />
+      <ContainerList />
       <ReduxTestContainer />
     </p>
   </div>
