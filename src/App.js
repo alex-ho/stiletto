@@ -16,7 +16,7 @@ const App = () => (
     <p className="App-intro">
       To get started, edit <code>src/App.js</code> and save to reload.
 
-      <Tile text={'Confluent-Kafka'} color={'red'} height={200}  />
+      <Tile text={'Confluent-Kafka with a longer name'} color={'red'} height={200}  />
       <ReduxTestContainer />
     </p>
   </div>

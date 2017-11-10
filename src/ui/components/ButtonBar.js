@@ -1,9 +1,19 @@
 // @flow
 import React from 'react'
 
-const ButtonBar = (props: { text: string, color: string, styles: object}) => (
+const styles = {
+  display: 'flex',
+  justifyContent: 'space-between',
+  alignItems: 'center',
+  padding: '5px 10px 5px 10px'
+}
 
-  <div style={{...props.styles, backgroundColor: props.color, display: 'flex', justifyContent: 'center', alignItems: 'center'}} >
+const ButtonBar = (props: { text: string, color: string, style: object}) => (
+  <div style={{
+    ... styles,
+    backgroundColor: props.color,
+    ... props.style,
+  }}>
     {props.children}
   </div>
 )
